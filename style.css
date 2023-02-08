@@ -28,7 +28,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    gap: 32px;
     margin: 0;
     padding: 0;
 }
@@ -144,7 +144,6 @@ button {
 
 .quote .text {
     font-size: 36px;
-    font-style: italic;
     font-weight: 100;
     color: #1f2937;
 }
@@ -176,10 +175,9 @@ button {
 
 /* footer */
 .footer {
-    border: 1px dashed black;
     display: flex;
     justify-content: center;
     background-color: #1f2937;
-    padding: 20px 100px;
+    padding: 25px 100px;
 }
 
