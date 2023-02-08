@@ -5,20 +5,20 @@ body {
     justify-content: space-between;
 }
 
-.top {
+.header {
     display: flex;
     background-color: #1f2937;
     flex-direction: column;
     padding: 0 100px;
 }
 
-.header {
+.menu {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 10px 0;
 }
 
-.header .logo {
+.logo {
     font-size: 24px;
     color: #f9faf8;
 }
@@ -40,20 +40,20 @@ a {
     text-decoration: none;
     color: #e5e7eb;
     font-size: 18px;
-    margin: 1px;
-}
-
-.banner .hero {
-    display: flex;
-    font-size: 48px;
-    font-weight: 900;
-    color: #f9faf8;
 }
 
 .subtext {
     font-size: 18px;
     font-weight: normal;
     color: #e5e7eb;
+}
+
+
+.banner .hero {
+    display: flex;
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
 }
 
 .banner img{
@@ -64,9 +64,10 @@ a {
 .content {
     border: 1px dashed black;
     display: flex;
-    flex: 1;
+    flex-direction: column;
     padding: 0 100px;
-
+    align-items: center;
+    justify-content: center;
 }
 
 .quote {
@@ -91,8 +92,9 @@ a {
 }
 
 .item img {
-    width: 50px;
-    height: auto;
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
 }
 
 .action {
@@ -104,6 +106,7 @@ a {
     color: #e5e7eb;
     margin: 0 75px;
     font-weight: bold;
+    border-radius: 8px;
 }
 
 .footer {
