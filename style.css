@@ -51,7 +51,7 @@ a {
 .banner {
     display: flex;
     justify-content: space-between;
-    height: 500px;
+    min-height: 500px;
     align-items: center;
     gap: 75px;
 }
@@ -64,9 +64,11 @@ a {
 }
 
 .banner img{
-    object-fit: cover;
-    height: 300px;
-    width: 600px;
+    object-fit: cover;  
+    max-width: 600px;
+    max-height: 300px;
+    width: fit-content;
+    height: fit-content;
 }
 
 button {
@@ -81,13 +83,51 @@ button {
 }
 
 .content {
-    border: 1px dashed black;
     display: flex;
     flex-direction: column;
-    padding: 0 100px;
     align-items: center;
     justify-content: center;
+    min-height: 500px;
 }
+
+.content .hero {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+    margin: 25px 0px;
+}
+
+.content .subtext {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    color: grey;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 200px;
+}
+.item img {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+}
+.item .text {
+    text-align: center;
+    padding: 10px 1px;
+}
+
+
 
 .quote {
     display: flex;
@@ -108,12 +148,6 @@ button {
     font-size: 18px;
     font-weight: bold;
     color: #1f2937;
-}
-
-.item img {
-    object-fit: cover;
-    width: 100px;
-    height: 100px;
 }
 
 .action {
